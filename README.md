@@ -109,8 +109,7 @@ pip install ultralytics
 - ✅ Works on webcam or video input
 
 ## 📷 Screenshots
-
-> *(Add screenshots here of your GUI and detection results)*
+![Uploading gui_tsr.png…]()
 
 ## 🔮 Future Improvements
 
