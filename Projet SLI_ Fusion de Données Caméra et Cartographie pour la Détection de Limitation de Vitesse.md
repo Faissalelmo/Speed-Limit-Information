@@ -1,4 +1,4 @@
-# Projet SLI: Fusion de Données Caméra et Cartographie pour la Détection de Limitation de Vitesse
+# 🚦 Projet SLI: Fusion de Données Caméra et Cartographie pour la Détection de Limitation de Vitesse
 
 ## Table des Matières
 1. [Objectif du Projet](#objectif-du-projet)
