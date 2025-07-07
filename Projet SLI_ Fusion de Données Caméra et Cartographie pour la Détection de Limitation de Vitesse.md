@@ -15,10 +15,10 @@ Ce projet de fin d'études vise à améliorer la fiabilité de la détection des
 ## 2. Modules Utilisés
 Le projet est structuré autour de plusieurs modules principaux, chacun ayant un rôle spécifique dans le processus de détection et de fusion des données de limitation de vitesse:
 
-*   **`camera_detection/`**: Contient le code et les modèles liés à la détection des panneaux de signalisation par vision par ordinateur (YOLOv8).
-*   **`map_data_processing/`**: Gère l'acquisition, le traitement et le recalage des données cartographiques (OpenStreetMap, OSRM) et GPS.
-*   **`fusion_algorithm/`**: Implémente l'algorithme de fusion des données provenant de la caméra et de la carte pour une estimation fiable de la limitation de vitesse.
-*   **`common_utils/`**: Regroupe les utilitaires et fonctions partagées par les différents modules.
+*   **`camera_detection`**: Contient le code et les modèles liés à la détection des panneaux de signalisation par vision par ordinateur (YOLOv8).
+*   **`map_detection`**: Gère l'acquisition, le traitement et le recalage des données cartographiques (OpenStreetMap, OSRM) et GPS.
+*   **`fusion_algorithm`**: Implémente l'algorithme de fusion des données provenant de la caméra et de la carte pour une estimation fiable de la limitation de vitesse.
+*   **`common_utils`**: Regroupe les utilitaires et fonctions partagées par les différents modules.
 
 ## 3. Structure du Dépôt
 ```
