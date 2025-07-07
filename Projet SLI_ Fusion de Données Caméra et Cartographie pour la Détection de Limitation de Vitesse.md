@@ -100,11 +100,11 @@ Le projet est conçu pour être exécuté via un script principal qui orchestre 
 
 *   **Exécution du module de détection caméra**:
     ```bash
-    python camera_detection/scripts/run_detection.py --source [chemin_vers_video_ou_camera]
+    python camera_detection/scripts/run_detection.py 
     ```
 *   **Exécution du module de traitement cartographique**:
     ```bash
-    python map_data_processing/run_map_processing.py --gpx_file [chemin_vers_fichier.gpx]
+    python map_data_processing/run_map_processing.py 
     ```
 *   **Exécution du système de fusion**:
     ```bash
