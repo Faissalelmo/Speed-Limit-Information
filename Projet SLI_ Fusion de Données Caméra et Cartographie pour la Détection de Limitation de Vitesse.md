@@ -12,6 +12,39 @@
 ## 1. Objectif du Projet
 Ce projet de fin d'études vise à améliorer la fiabilité de la détection des limitations de vitesse dans les véhicules en combinant deux sources d’information : la détection visuelle par caméra et les données issues de la cartographie numérique. Le système développé repose sur une architecture modulaire, intégrant des algorithmes de vision embarquée, de map-matching, et de fusion décisionnelle. L’approche proposée permet de pallier les limites de chaque méthode lorsqu’elles sont utilisées de manière isolée, en assurant une meilleure précision et une meilleure couverture dans la détection des vitesses maximales autorisées. L'objectif est d'atteindre une fiabilité supérieure à 97% pour le système SLI (Speed Limit Information).
 
+## 🧪 How It Works
+
+### Dataset Preparation
+
+- Annotated speed limit signs with Roboflow.
+- Exported dataset in YOLO format and trained it with YOLOv8 using Ultralytics.
+
+### Model Training
+
+```bash
+yolo task=detect mode=train model=yolov8n.pt data=data.yaml epochs=100 imgsz=640
+```
+
+### Real-Time Detection
+
+The trained model detects traffic signs via webcam/video input and classifies the speed limit type.
+
+### Distance Estimation
+
+A function estimates the distance between the detected sign and the vehicle based on the sign size in the frame.
+
+### Speed Quality Evaluation
+
+Based on the current vehicle speed (input or simulated), the system determines whether the driver is within the legal limit.
+
+### Graphical Interface (GUI)
+
+The interface is developed using PyQt5 and includes:
+- Live camera feed
+- Detected sign and speed limit
+- Estimated distance to sign
+- Speed quality feedback (e.g., OK, TOO FAST)
+  
 ## 2. Modules Utilisés
 Le projet est structuré autour de plusieurs modules principaux, chacun ayant un rôle spécifique dans le processus de détection et de fusion des données de limitation de vitesse:
 
