@@ -125,7 +125,7 @@ Ce dossier contient des images et des vidéos illustrant les résultats obtenus 
 ## 7. Code Complet et Datasets
 Le code complet du projet, incluant les datasets d'entraînement, les notebooks Jupyter, et les scripts détaillés, est disponible dans le dossier Google Drive suivant:
 
-👉 [**À insérer ici le lien vers votre dossier Google Drive**]
+👉 [**[À insérer ici le lien vers votre dossier Google Drive](https://drive.google.com/drive/folders/1oTisFENqo5xwP31eMjg7Vhcya6iwTsfb?usp=drive_link)**]
 
 Ce lien vous donnera accès à l'intégralité des ressources du projet, y compris les données brutes et les modèles spécifiques.
 
