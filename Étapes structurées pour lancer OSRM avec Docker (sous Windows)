@@ -1,0 +1,49 @@
+✅ Étapes structurées pour lancer OSRM avec Docker (sous Windows)
+🗂️ Pré-requis :
+Fichier .osm.pbf : berlin-latest.osm.pbf
+
+Dossier de travail local : D:\PFE SLI 2025\osrm\data
+
+Docker installé
+
+Connexion Internet pour tester l'API avec curl
+
+🔧 1. Extraction des données (osrm-extract)
+Cette commande extrait les données de routage depuis le fichier .osm.pbf.
+
+powershell
+docker run -t -v "D:\PFE SLI 2025\osrm\data:/data" ghcr.io/project-osrm/osrm-backend osrm-extract -p /opt/car.lua /data/berlin-latest.osm.pbf
+if ($LASTEXITCODE -ne 0) { Write-Output "osrm-extract failed" }
+🧩 2. Partition des données (osrm-partition)
+Étape nécessaire pour préparer les graphes avec l’algorithme MLD (Multi-Level Dijkstra).
+
+powershell
+docker run -t -v "D:\PFE SLI 2025\osrm\data:/data" ghcr.io/project-osrm/osrm-backend osrm-partition /data/berlin-latest.osrm
+if ($LASTEXITCODE -ne 0) { Write-Output "osrm-partition failed" }
+🛠️ 3. Personnalisation (osrm-customize)
+Cette étape ajuste les vitesses ou les coûts selon les types de routes.
+
+powershell
+docker run -t -v "D:\PFE SLI 2025\osrm\data:/data" ghcr.io/project-osrm/osrm-backend osrm-customize /data/berlin-latest.osrm
+if ($LASTEXITCODE -ne 0) { Write-Output "osrm-customize failed" }
+🚀 4. Lancement du serveur de routage (osrm-routed)
+Démarre l’API locale d’OSRM (port 5000) avec l’algorithme MLD.
+
+powershell
+docker run -t -i -p 5000:5000 --name nkhtchlk -v "D:\PFE SLI 2025\osrm\data:/data" ghcr.io/project-osrm/osrm-backend osrm-routed --algorithm mld /data/berlin-latest.osrm
+✅ Si tu as déjà créé le conteneur nkhtchlk, tu peux simplement le redémarrer avec :
+
+powershell
+docker start nkhtchlk
+🌍 5. Test de l'API locale OSRM
+Effectue une requête de routage entre deux coordonnées à Berlin.
+
+powershell
+curl.exe "http://localhost:5000/route/v1/driving/13.388860,52.517037;13.385983,52.496891?steps=true&alternatives=true"
+🧭 Résumé des étapes dans l’ordre :
+1- osrm-extract – Extraction du fichier OSM
+2- osrm-partition – Préparation du graphe (MLD)
+3- osrm-customize – Ajustements personnalisés
+4- osrm-routed – Lancement du serveur
+5- curl – Test d'une requête HTTP
+
