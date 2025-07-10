@@ -129,3 +129,32 @@ Le code complet du projet, incluant les datasets d'entraînement, les notebooks 
 
 Ce lien vous donnera accès à l'intégralité des ressources du projet, y compris les données brutes et les modèles spécifiques.
 
+## 📊 Features
+
+- ✅ Real-time detection of speed limit signs
+- ✅ GUI with PyQt5
+- ✅ Distance estimation between sign and camera
+- ✅ Speed quality alert
+- ✅ Works on webcam or video input
+
+## 🔮 Future Improvements
+
+- Integrate vehicle's real speed from GPS or CAN bus
+- Add voice alerts for over-speeding
+- Expand to detect other traffic signs (Stop, Yield, etc.)
+- Deploy on edge devices (Jetson Nano, Raspberry Pi)
+
+## 👤 Author
+
+Developed by **Faissal Elmokaddem**  
+📧 Contact: faissal.elmokaddem@gmail.com  
+🔗 LinkedIn: [linkedin.com/in/faissal-elmokaddem](https://linkedin.com/in/faissal-elmokaddem)  
+💻 GitHub: [github.com/FaissalElmokaddem](https://github.com/FaissalElmokaddem)
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+🚗 *"Driving safely with AI-powered vision."*
