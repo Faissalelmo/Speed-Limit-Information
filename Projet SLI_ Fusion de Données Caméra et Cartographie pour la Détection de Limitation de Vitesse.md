@@ -120,12 +120,12 @@ Ce dossier contient des images et des vidéos illustrant les résultats obtenus 
 *   Visualisation du recalage cartographique (Map-Matching) des traces GPS sur OpenStreetMap.
 *   Démonstrations de la fusion des données caméra et carte, et de l'affichage des limitations de vitesse.
 
-**Accéder aux résultats**: [Lien vers le dossier `results/` dans ce dépôt ou vers un dossier Google Drive/YouTube si les fichiers sont trop volumineux]
+**Accéder aux résultats**: [[Lien vers le dossier `results](https://drive.google.com/drive/folders/1RfBbEmmLGVCvTwhYuqfYjoiG9TB6Wwa_?usp=drive_link)]
 
 ## 7. Code Complet et Datasets
 Le code complet du projet, incluant les datasets d'entraînement, les notebooks Jupyter, et les scripts détaillés, est disponible dans le dossier Google Drive suivant:
 
-👉 [**[À insérer ici le lien vers votre dossier Google Drive](https://drive.google.com/drive/folders/1oTisFENqo5xwP31eMjg7Vhcya6iwTsfb?usp=drive_link)**]
+👉 [**[Le lien vers le projet SLI](https://drive.google.com/drive/folders/1oTisFENqo5xwP31eMjg7Vhcya6iwTsfb?usp=drive_link)**]
 
 Ce lien vous donnera accès à l'intégralité des ressources du projet, y compris les données brutes et les modèles spécifiques.
 
