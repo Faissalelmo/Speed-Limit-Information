@@ -180,7 +180,7 @@ Ce lien vous donnera accès à l'intégralité des ressources du projet, y compr
 ## 👤 Author
 
 Developed by **Faissal Elmokaddem**  
-📧 Contact: faissal.elmokaddem@gmail.com  
+📧 Contact: faissalelmokaddem@gmail.com  
 🔗 LinkedIn: [linkedin.com/in/faissal-elmokaddem](https://linkedin.com/in/faissal-elmokaddem)  
 💻 GitHub: [github.com/FaissalElmokaddem](https://github.com/FaissalElmokaddem)
 
